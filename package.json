@@ -1,0 +1,20 @@
+{
+  "name": "funny-pixel",
+  "version": "1.0.0",
+  "description": "A world of pixels\r > design source https://dotown.maeda-design-room.net/",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZL-Curry/funny-pixel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZL-Curry/funny-pixel/issues"
+  },
+  "homepage": "https://github.com/ZL-Curry/funny-pixel#readme"
+}
