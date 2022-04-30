@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "htt";
+  src: url("./assets/htt.ttf") format("truetype");
+}
+.htt {
+  font-family: "htt";
+  font-size: 30px;
+  color: brown;
+}
+
 * {
   margin: 0;
   padding: 0;

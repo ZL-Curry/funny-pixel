@@ -9,7 +9,7 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: 'js/bundle.js',
     clean: true, // 清除dist文件夹
     // 将模块名称添加到资源文件名称中 contenthash 动态生成的文件名 ext生成文件的拓展名
     assetModuleFilename: 'image/[contenthash][ext]',
@@ -46,6 +46,7 @@ module.exports = {
       },
       { test: /\.svg$/, type: 'asset/inline' }, // 内联
       { test: /\.txt$/, type: 'asset/source' }, // 源文件
+      { test: /\.(woff|woff2|eot|ttf|otf)$/i, type: 'asset/resource' }, // 源文件 
       {
         test: /\.txt$/,
         type: 'asset',
