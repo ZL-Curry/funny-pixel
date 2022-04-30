@@ -2,53 +2,58 @@
   margin: 0;
   padding: 0;
 }
+
 ul li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
 body {
   background: #dec8c8;
   color: #000;
 }
+
 img {
   width: 80px;
   height: 80px;
 }
+
 header {
   height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 105px;
-  background: rgb(249, 232, 232);
-  div {
-    display: flex;
-    align-items: center;
-    h1:first-letter {
-      color: red;
-    }
-  }
-  nav {
-    ul {
-      display: flex;
-      li {
-        padding: 0 20px;
-      }
-    }
-  }
+  background: #f9e8e8;
 }
+header div {
+  display: flex;
+  align-items: center;
+}
+header div h1:first-letter {
+  color: red;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  padding: 0 20px;
+}
+
 section {
   min-height: 350px;
   background: #f3f3f3;
   position: relative;
-  h2 {
-    font-size: 60px;
-    line-height: 350px;
-    text-align: center;
-  }
 }
+section h2 {
+  font-size: 60px;
+  line-height: 350px;
+  text-align: center;
+}
+
 .sanpo {
   position: absolute;
   bottom: 0;
@@ -57,12 +62,14 @@ section {
   width: 18.3333333333%;
   z-index: 999;
 }
+
 .sanpo.left {
   -webkit-transform: rotateY(180deg);
   -webkit-animation: return 15s linear infinite;
   animation: return 15s linear infinite;
   transform: rotateY(180deg);
 }
+
 .sanpo.right {
   -webkit-animation: return-right 15s linear infinite;
   animation: return-right 15s linear infinite;
@@ -147,18 +154,19 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  div {
-    text-align: center;
-    margin: 10px 0px;
-  }
-  div:first-child,
-  div:nth-child(2) {
-    font-size: 26px;
-  }
-  div:last-child {
-    font-size: 18px;
-  }
 }
+footer div {
+  text-align: center;
+  margin: 10px 0px;
+}
+footer div:first-child,
+footer div:nth-child(2) {
+  font-size: 26px;
+}
+footer div:last-child {
+  font-size: 18px;
+}
+
 .mf {
   animation: hachi 0.5s infinite alternate ease-in-out;
   position: absolute;
@@ -166,11 +174,11 @@ footer {
   top: 100px;
   width: 5%;
   z-index: 2;
-  img {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    vertical-align: bottom;
-  }
+}
+.mf img {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  vertical-align: bottom;
 }
 
 @-webkit-keyframes hachi {
@@ -192,4 +200,7 @@ footer {
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
   }
+}
+.bg-img {
+  background-image: url(./assets/logo.png) !important;
 }
