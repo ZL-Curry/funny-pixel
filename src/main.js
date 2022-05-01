@@ -22,3 +22,18 @@ import './index.css'
 import './index.scss'
 
 text()
+const a = (arr) => {
+  return arr.map(e=> e==2)
+}
+console.log(a([1, 2, 3]));
+
+const button = document.createElement('button')
+button.textContent = 'Click me and check the console!'
+button.addEventListener('click',() => {
+  // 这个数字可以定义文件名 webpackPrefetch 预加载 webpackPreload
+  import(/* webpackChunkName: 'math', webpackPrefetch: true */'./another.js').then(({ twoSum, minus }) => {
+    console.log(twoSum(1, 2)) // 3);
+    console.log(minus(3, 2)) // 3);
+  })
+})
+document.body.appendChild(button)
